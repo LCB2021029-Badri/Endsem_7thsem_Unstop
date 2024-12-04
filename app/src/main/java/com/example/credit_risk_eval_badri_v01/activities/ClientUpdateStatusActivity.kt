@@ -26,10 +26,10 @@ class ClientUpdateStatusActivity : AppCompatActivity() {
     private lateinit var binding:ActivityClientUpdateStatusBinding
     private lateinit var database: FirebaseDatabase
 
-    val USERNAME = "u0nbfzswwp"
-    val PASSWORD = "7kw_tDTpsWWwyeOtSdJmOfj6179YXiiewyQN4WU7CGA"
-    val BASE2_URL = "https://u0ft62dsi9-u0oicgb1o0-connect.us0-aws.kaleido.io/gateways/testinggreylife/0xea3238eb802619629107e6e5f0fd00be0aa132bb/"
-    val kldFromValue2 = "0x0c7d6a7a583b790be7635bef63c9a65327d415d5"
+    val USERNAME = "u0tzzoe182"
+    val PASSWORD = "joCMnDubl5xBq5UAHM9NFdvSr8zZu6GDHC_karKsrGE"
+    val BASE2_URL = "https://u0ddvaf03p-u0wjcd0t94-connect.us0-aws.kaleido.io/gateways/u0g2ygmpsm/0xcb9a050d5611bf88d5409057fc1059582d726565/"
+    val kldFromValue2 = "0x099bfedb558eb1deb3ad94aa5eaf367d83c94823"
     private lateinit var myApi: MyBlockchainApi
 
 
