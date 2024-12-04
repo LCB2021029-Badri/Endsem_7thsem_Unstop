@@ -17,424 +17,419 @@
 
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:paddingTop="5dp"
-        android:paddingHorizontal="10dp"
-        android:layout_height="match_parent">
-
-
-
-
-
-    <TextView
-        android:id="@+id/tvCommon"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/myWhite"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:text="Details for "/>
-
-    <TextView
-        android:id="@+id/tvjobType"
-        android:layout_toEndOf="@id/tvCommon"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/myYellow"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:text="SDE"/>
-
-    <TextView
-        android:id="@+id/tcCommon2"
-        android:layout_toEndOf="@id/tvjobType"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/myWhite"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:text=" Application"/>
-
-    <ScrollView
-        android:layout_marginTop="5dp"
-        android:layout_below="@id/tvCommon"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-
-        <LinearLayout
-            android:id="@+id/ll"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:paddingTop="5dp"
+            android:paddingHorizontal="10dp"
+            android:layout_height="match_parent">
 
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+
+
+
+
+            <TextView
+                android:id="@+id/tvCommon"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Years of Experience"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
+                android:textColor="@color/myWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text="Details for "/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etNoOfDependents"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tvjobType"
+                android:layout_toEndOf="@id/tvCommon"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Previous CTC"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
+                android:textColor="@color/myYellow"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="SDE"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etIncomeAnnum"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
+            <TextView
+                android:id="@+id/tcCommon2"
+                android:layout_toEndOf="@id/tvjobType"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Expected CTC"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
+                android:textColor="@color/myWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:text=" Application"/>
 
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etField"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Skills"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etExperience"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="CGPA"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etpreviousctc"
-                    android:inputType="number"
-                    android:textColor="@color/myYellow"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Linkedin Profile Link"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etcurrentctc"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Github Profile Link"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etskills"
-                    android:textColor="@color/myYellow"
-                    android:layout_width="match_parent"
-                    android:inputType="number"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Are you authorised to work in the country"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etworkinghours"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Field"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etadditionalinfo"
-                    android:textColor="@color/myYellow"
-                    android:inputType="number"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:layout_marginBottom="5dp"
-                android:hint="Highest Education Degree"
-                app:boxStrokeColor="@drawable/box_outline_selector"
-                app:hintTextColor="@color/myYellow"
-                android:textColorHint="@color/myWhite">
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etEducation"
-                    android:textColor="@color/myYellow"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:weightSum="2"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textColor="@color/myWhite"
-                    android:text="Resume :"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_weight="1"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:boxStrokeColor="@drawable/box_outline_selector"
-                    app:hintTextColor="@color/myYellow"
-                    android:textColorHint="@color/myWhite">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etSelectPdf1"
-                        android:textColor="@color/myYellow"
-                        android:hint="Upload"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:weightSum="2"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textColor="@color/myWhite"
-                    android:text="Cover Letter:"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_weight="1"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:boxStrokeColor="@drawable/box_outline_selector"
-                    app:hintTextColor="@color/myYellow"
-                    android:textColorHint="@color/myWhite">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etSelectPdf2"
-                        android:textColor="@color/myYellow"
-                        android:hint="Upload"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:weightSum="2"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textColor="@color/myWhite"
-                    android:text="Additional Docs:"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_weight="1"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:boxStrokeColor="@drawable/box_outline_selector"
-                    app:hintTextColor="@color/myYellow"
-                    android:textColorHint="@color/myWhite">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etSelectPdf3"
-                        android:textColor="@color/myYellow"
-                        android:hint="Upload"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginHorizontal="5dp"
-                android:weightSum="2"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:textSize="18sp"
-                    android:textColor="@color/myWhite"
-                    android:text="Transcripts:"/>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_weight="1"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:boxStrokeColor="@drawable/box_outline_selector"
-                    app:hintTextColor="@color/myYellow"
-                    android:textColorHint="@color/myWhite">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/etSelectPdf4"
-                        android:textColor="@color/myYellow"
-                        android:hint="Upload"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-            </LinearLayout>
-
-
-
-            <Button
-                android:id="@+id/btnSubmit"
-                android:layout_alignParentBottom="true"
-                android:backgroundTint="@color/myYellow"
+            <ScrollView
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp"
-                android:textColor="@color/black"
+                android:layout_below="@id/tvCommon"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Submit"/>
-
-        </LinearLayout>
+                android:layout_height="wrap_content">
 
 
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-    </ScrollView>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Years of Experience"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etNoOfDependents"
+                            android:textColor="@color/myYellow"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
 
 
-    </RelativeLayout>
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Previous CTC"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etIncomeAnnum"
+                            android:textColor="@color/myYellow"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Expected CTC"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etField"
+                            android:textColor="@color/myYellow"
+                            android:inputType="number"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Skills"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etExperience"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="CGPA"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etpreviousctc"
+                            android:inputType="number"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Linkedin Profile Link"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etcurrentctc"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Github Profile Link"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etskills"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Are you authorised to work in the country"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etworkinghours"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Field"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etadditionalinfo"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:hint="Highest Education Degree"
+                        app:boxStrokeColor="@drawable/box_outline_selector"
+                        app:hintTextColor="@color/myYellow"
+                        android:textColorHint="@color/myWhite">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/etEducation"
+                            android:textColor="@color/myYellow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="@color/myWhite"
+                            android:text="Resume :"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeColor="@drawable/box_outline_selector"
+                            app:hintTextColor="@color/myYellow"
+                            android:textColorHint="@color/myWhite">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etSelectPdf1"
+                                android:textColor="@color/myYellow"
+                                android:hint="Upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="@color/myWhite"
+                            android:text="Cover Letter:"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeColor="@drawable/box_outline_selector"
+                            app:hintTextColor="@color/myYellow"
+                            android:textColorHint="@color/myWhite">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etSelectPdf2"
+                                android:textColor="@color/myYellow"
+                                android:hint="Upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="@color/myWhite"
+                            android:text="Additional Docs:"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeColor="@drawable/box_outline_selector"
+                            app:hintTextColor="@color/myYellow"
+                            android:textColorHint="@color/myWhite">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etSelectPdf3"
+                                android:textColor="@color/myYellow"
+                                android:hint="Upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="5dp"
+                        android:weightSum="2"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textSize="18sp"
+                            android:textColor="@color/myWhite"
+                            android:text="Transcripts:"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_weight="1"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:boxStrokeColor="@drawable/box_outline_selector"
+                            app:hintTextColor="@color/myYellow"
+                            android:textColorHint="@color/myWhite">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:id="@+id/etSelectPdf4"
+                                android:textColor="@color/myYellow"
+                                android:hint="Upload"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/btnSubmit"
+                        android:layout_alignParentBottom="true"
+                        android:backgroundTint="@color/myYellow"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"/>
+
+                </LinearLayout>
+
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
 
     </ScrollView>
 
