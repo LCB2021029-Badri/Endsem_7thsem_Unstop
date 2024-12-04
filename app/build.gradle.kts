@@ -90,5 +90,6 @@ dependencies {
     //firebase ui
     implementation ("com.google.firebase:firebase-database:20.0.2")
     implementation ("com.firebaseui:firebase-ui-database:7.1.1")
+    implementation("com.google.ai.client.generativeai:generativeai:0.1.2")
 
 }
